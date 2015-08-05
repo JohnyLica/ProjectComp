@@ -23,6 +23,7 @@ namespace Presentation
                Console.WriteLine( date2);
                //var currentTime = DateTime.Now;
                //Console.WriteLine(currentTime);
+
                var productComputers = ProductFactory.CreateNewComputer("Asus", "Intel Core i7", 8, 2, 2013);
                var computer = new NewComputerProxy(new Computer("Asus", "Intel Core i7", 8, 2, 2012));
                computer.ChangeRam();
