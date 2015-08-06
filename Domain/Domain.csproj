@@ -46,8 +46,15 @@
   <ItemGroup>
     <Compile Include="CaseColor.cs" />
     <Compile Include="Domain\Computer.cs" />
+    <Compile Include="Observer\MagLocation.cs" />
+    <Compile Include="Observer\Observer.cs" />
+    <Compile Include="Observer\IObserver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Visitors\IItem.cs" />
+    <Compile Include="Visitors\IVisitor.cs" />
+    <Compile Include="Visitors\TotalPrice.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

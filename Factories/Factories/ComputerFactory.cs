@@ -17,16 +17,16 @@ namespace Factories.Factories
                _actionSendNotification.Notify(product);
           }
 
-          public  Computer CreateNewComputer(string name, string cpu, int ram, float hdd, int year)
+          public  Computer CreateNewComputer(string name, string cpu, int ram, float hdd, int year, int price)
           {
-               var computer = new Computer(name, cpu, ram, hdd, year);
+               var computer = new Computer(name, cpu, ram, hdd, year, price);
                OnProductCreation(computer);
                return computer;
           }
 
-          public  Computer CreateNewLaptop(string name, int ram, float hdd, int year)
+          public  Computer CreateNewLaptop(string name, int ram, float hdd, int year, int price)
           {
-               var laptop = new Computer(name, " ", ram, hdd, year);
+               var laptop = new Computer(name, " ", ram, hdd, year, price);
                OnProductCreation(laptop);
                return laptop;
           }
